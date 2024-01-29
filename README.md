@@ -1,23 +1,26 @@
-# Video Call Project
+# Realtime Peer-to-Peer Video Streaming 🎥
 
-## Development
+Realtime Peer-to-Peer Video Streaming is a project that leverages WebRTC and Go to achieve millisecond latency for video streaming between peers. This README provides an overview of the project, how to set it up, and how to use it effectively.
 
-Build images;
+## Introduction
 
-```sh
-make build-dev
-```
+Realtime Peer to Peer Video Streaming is a cutting-edge solution for low-latency video streaming. It uses WebRTC for real-time communication and Go for server-side processing to achieve millisecond latency, making it suitable for applications where ultra-fast video streaming is crucial.
 
-For development;
+## Features
 
-```sh
-make run-dev
-```
+✨ **Millisecond Latency**: Achieve near-instantaneous video streaming thanks to WebRTC and Go.
 
-Guys, the production side of things hasn't been setup by me, but in case you want to use this for production, you know what to do, use the below commands after adding the relevant prod file in docker compose folder.
+👥 **Peer to Peer**: Stream video directly between peers, minimizing server involvement.
 
-For production;
+🚀 **Easy Setup**: Simple installation and usage make it accessible for developers of all skill levels.
 
-```sh
-make run-prod
-```
+🔧 **Customizable**: Customize and extend the project to fit your specific requirements.
+
+🌐 **Scalable**: Designed to handle a large number of simultaneous video streams.
+
+## Requirements
+
+- Go 1.16 or higher
+- Node.js and npm (for frontend development)
+- Modern web browser that supports WebRTC (Chrome, Firefox, Safari, etc.)
+- A server with a public IP address (for signaling and relay)
