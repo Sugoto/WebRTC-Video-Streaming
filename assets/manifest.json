@@ -1,0 +1,15 @@
+{
+  "theme_color": "#e5e9f0",
+  "description": "Real-time video streaming app built with WebRTC and Go.",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "name": "WebRTC Video Streaming App",
+  "short_name": "Video Streaming",
+  "start_url": "/"
+}
