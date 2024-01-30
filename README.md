@@ -1,22 +1,20 @@
-# Realtime Peer-to-Peer Video Streaming 🎥
+# 🎥 Realtime Peer-to-Peer Video Streaming
 
-Realtime Peer-to-Peer Video Streaming is a project that leverages WebRTC and Go to achieve millisecond latency for video streaming between peers. This README provides an overview of the project, how to set it up, and how to use it effectively.
+Realtime Peer-to-Peer Video Streaming is a project that leverages WebRTC and Go to achieve millisecond latency for video streaming between peers.
 
-## Introduction
+# 🌟 Video Compression Approaches and Wrapper Class
 
-Realtime Peer to Peer Video Streaming is a cutting-edge solution for low-latency video streaming. It uses WebRTC for real-time communication and Go for server-side processing to achieve millisecond latency, making it suitable for applications where ultra-fast video streaming is crucial.
+### 1. Run-Length Encoding (RLE)
+- RLE is a simple lossless compression technique that encodes consecutive identical data values as a single value followed by a count.
 
-## Features
+### 2. Lempel-Ziv-Welch (LZW) Compression
+- LZW is a dictionary-based lossless compression method that encodes repetitive data patterns efficiently.
+  
+### 3. Delta Encoding
+- Delta encoding focuses on encoding the differences between consecutive video frames to reduce redundancy.
 
-✨ **Millisecond Latency**: Achieve near-instantaneous video streaming thanks to WebRTC and Go.
-
-👥 **Peer to Peer**: Stream video directly between peers, minimizing server involvement.
-
-🚀 **Easy Setup**: Simple installation and usage make it accessible for developers of all skill levels.
-
-🔧 **Customizable**: Customize and extend the project to fit your specific requirements.
-
-🌐 **Scalable**: Designed to handle a large number of simultaneous video streams.
+### 🧩 VideoCodec Wrapper Class
+- A `VideoCodec` class acts as a wrapper that combines the three compression approaches into a unified interface for video compression and decompression.
 
 ## Requirements
 
