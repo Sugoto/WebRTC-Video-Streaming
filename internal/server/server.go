@@ -1,5 +1,6 @@
 package server
 
+// Importing necessary libraries 
 import (
 	"flag"
 	"github.com/gofiber/fiber/v2"
@@ -13,6 +14,7 @@ import (
 	"time"
 )
 
+// Creating a struct to store the server details
 var (
 	addr = flag.String("addr", ":"+os.Getenv("PORT"), "")
 	cert = flag.String("cert", "", "")
