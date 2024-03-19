@@ -11,6 +11,7 @@ import (
 	"time"
 )
 
+// Room Mutex
 var (
 	RoomsLock sync.RWMutex
 	Rooms     map[string]*Room
