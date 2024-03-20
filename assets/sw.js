@@ -21,6 +21,7 @@ self.addEventListener("install", (e) => {
   );
 });
 
+// Event Listener
 self.addEventListener("fetch", (e) => {
   console.log(e.request.url);
   e.respondWith(
