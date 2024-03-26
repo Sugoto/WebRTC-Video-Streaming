@@ -3,7 +3,6 @@
 #include <map>
 #include <algorithm>
 
-// Define a structure to represent a color pixel (RGB)
 struct ColorPixel
 {
     unsigned char r, g, b;
