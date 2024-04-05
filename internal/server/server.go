@@ -24,6 +24,7 @@ var (
 func Run() error {
 	flag.Parse()
 
+	// Basic Server address
 	if *addr == ":" {
 		*addr = ":8080"
 	}
