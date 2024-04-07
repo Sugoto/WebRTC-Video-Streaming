@@ -28,6 +28,7 @@ func main() {
 		log.Fatalf("'users' is required")
 	}
 
+	// Add listener for UDP connection
 	udpListener, err := net.ListenPacket("udp4", "0.0.0.0:"+strconv.Itoa(*port))
 	if err != nil {
 		log.Panicf("failed to create TURN server listener: %s", err)
