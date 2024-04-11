@@ -5,7 +5,6 @@ import (
 	"log"
 )
 
-// Start the server
 func main() {
 	if err := server.Run(); err != nil {
 		log.Fatalln(err.Error())
