@@ -10,6 +10,7 @@ import (
 	"github.com/pion/webrtc/v3"
 )
 
+// Room Connection
 func RoomConn(c *websocket.Conn, p *Peers) {
 	var config webrtc.Configuration
 	if os.Getenv("ENVIRONMENT") == "PRODUCTION" {
