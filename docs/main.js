@@ -26,8 +26,14 @@ let createOffer = async () => {
   peerConnection.onicecandidate = async (event) => {
     //Event that fires off when a new offer ICE candidate is created
     if (event.candidate) {
-      document.getElementById("offer-sdp").value = JSON.stringify(
-        peerConnection.localDescription
+      let sdpOffer = JSON.stringify(peerConnection.localDescription);
+      navigator.clipboard.writeText(sdpOffer).then(
+        function () {
+          console.log("Copying to clipboard was successful!");
+        },
+        function (err) {
+          console.error("Could not copy text: ", err);
+        }
       );
     }
   };
@@ -42,9 +48,14 @@ let createAnswer = async () => {
   peerConnection.onicecandidate = async (event) => {
     //Event that fires off when a new answer ICE candidate is created
     if (event.candidate) {
-      console.log("Adding answer candidate...:", event.candidate);
-      document.getElementById("answer-sdp").value = JSON.stringify(
-        peerConnection.localDescription
+      let sdpAnswer = JSON.stringify(peerConnection.localDescription);
+      navigator.clipboard.writeText(sdpAnswer).then(
+        function () {
+          console.log("Copying to clipboard was successful!");
+        },
+        function (err) {
+          console.error("Could not copy text: ", err);
+        }
       );
     }
   };
