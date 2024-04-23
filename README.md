@@ -2,6 +2,8 @@
 
 Realtime Peer-to-Peer Video Streaming is a project that leverages WebRTC and Go to achieve millisecond latency for video streaming between peers.
 
+![image](https://github.com/Sugoto/WebRTC-Video-Streaming/assets/60142374/fc7ea605-bc72-4e89-9e83-70c52e65b1db)
+
 # 🌟 Video Compression Approaches and Wrapper Class
 
 ### 1. Run-Length Encoding (RLE)
