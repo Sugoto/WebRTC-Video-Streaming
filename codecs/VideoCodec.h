@@ -3,7 +3,7 @@
 
 #include <vector>
 
-// Define a structure to represent a color pixel (RGB)
+// Structure to represent a color pixel (RGB)
 struct ColorPixel
 {
     unsigned char r, g, b;
