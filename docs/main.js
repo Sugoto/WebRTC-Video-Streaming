@@ -35,7 +35,6 @@ let init = async () => {
 
 let createOffer = async () => {
   peerConnection.onicecandidate = async (event) => {
-    //Event that fires off when a new offer ICE candidate is created
     if (event.candidate) {
       let sdpOffer = JSON.stringify(peerConnection.localDescription);
       navigator.clipboard.writeText(sdpOffer).then(
