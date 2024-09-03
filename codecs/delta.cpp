@@ -112,7 +112,6 @@ int main()
     // Encode the sequence of frames using Delta encoding
     std::vector<ColorPixel> deltaEncodedFrames = deltaEncodeFrames(originalFrames);
 
-    // Decode the sequence of frames
     std::vector<std::vector<ColorPixel>> decodedFrames = deltaDecodeFrames(deltaEncodedFrames, frameWidth, frameHeight);
 
     // Verify the decoded frames match the original
