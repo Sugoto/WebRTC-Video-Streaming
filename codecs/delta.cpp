@@ -7,7 +7,6 @@ struct ColorPixel
     unsigned char r, g, b;
 };
 
-// Function to calculate the absolute difference between two color pixels
 ColorPixel colorDifference(const ColorPixel &a, const ColorPixel &b)
 {
     ColorPixel diff;
